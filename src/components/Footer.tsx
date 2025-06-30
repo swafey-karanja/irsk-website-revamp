@@ -41,7 +41,7 @@ const Footer = () => {
               <button
                 type="submit"
                 disabled={isSubscribed}
-                className="px-8 py-3 bg-[#0172c0] hover:bg-[#015aa3] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#0172c0]/25 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
+                className="px-8 py-3 bg-orange-400 hover:bg-orange-500 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#0172c0]/25 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105"
               >
                 {isSubscribed ? "✓ Subscribed!" : "Subscribe"}
               </button>

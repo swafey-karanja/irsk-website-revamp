@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { Search, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("About");
@@ -69,10 +70,13 @@ const Navbar = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-red-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Be</span>
-              </div>
-              <span className="text-2xl font-light text-gray-700">Charity</span>
+              <Image
+                src="/International-Relations-Society-of-Kenya-IRSK-Logo.webp"
+                alt="logo"
+                width={150}
+                height={50}
+                className="object-contain"
+              />
             </div>
 
             {/* Donate section */}
@@ -163,7 +167,7 @@ const Navbar = () => {
 
       {/* Scrolled Navbar - visible when scrolled */}
       <nav
-        className={`fixed top-0 left-0 right-0 bg-white border-b border-gray-200 shadow-sm z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 bg-white/90 border-b border-gray-200 shadow-sm z-50 transition-all duration-300 ${
           isScrolled
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0 pointer-events-none"

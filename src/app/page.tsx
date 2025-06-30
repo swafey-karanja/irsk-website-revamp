@@ -1,7 +1,15 @@
+import AboutSection from "@/sections/AboutSection";
+import FAQSection from "@/sections/FAQSection";
+import HeroSection from "@/sections/HeroSection";
+import NewsSection from "@/sections/NewsSection";
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Welcome to My App!</h1>
+    <div>
+      <HeroSection />
+      <NewsSection />
+      <AboutSection />
+      <FAQSection />
     </div>
   );
 }
