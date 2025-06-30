@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
-const HeroSection = () => {
+const LandingHeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Sample images - you can replace these URLs with your actual images
@@ -85,14 +85,14 @@ const HeroSection = () => {
       {/* Bottom CTA Section */}
       <div className="absolute bottom-0 left-0 right-0 flex">
         {/* Volunteer CTA */}
-        <div className="flex-1 bg-slate-700 bg-opacity-95 text-white py-8 px-8 md:px-16 lg:px-24 hover:bg-opacity-100 transition-all duration-300 cursor-pointer">
+        <div className="flex-1 bg-slate-700 text-white py-8 px-8 md:px-16 lg:px-24 hover:bg-opacity-100 transition-all duration-300 cursor-pointer">
           <h3 className="text-2xl md:text-3xl font-semibold">
             Become a member today
           </h3>
         </div>
 
         {/* Donate CTA */}
-        <div className="flex-1 bg-red-500 bg-opacity-95 text-white py-8 px-8 md:px-16 lg:px-24 hover:bg-opacity-100 transition-all duration-300 cursor-pointer">
+        <div className="flex-1 bg-red-500 text-white py-8 px-8 md:px-16 lg:px-24 hover:bg-opacity-100 transition-all duration-300 cursor-pointer">
           <h3 className="text-2xl md:text-3xl font-semibold">
             Join and grow with Us
           </h3>
@@ -112,4 +112,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default LandingHeroSection;

@@ -40,11 +40,6 @@ const NewsSection = () => {
 
   const items = newsItems;
 
-  const handleReadMore = (id: number) => {
-    console.log(`Read more clicked for item ${id}`);
-    // Add your read more logic here
-  };
-
   return (
     <section className="py-16 px-4 relative border-b-12 border-gray-600/40">
       {/* Background decorative elements */}
@@ -68,7 +63,6 @@ const NewsSection = () => {
               image={item.image}
               title={item.title}
               description={item.description}
-              onReadMore={() => handleReadMore(item.id)}
             />
           ))}
         </div>

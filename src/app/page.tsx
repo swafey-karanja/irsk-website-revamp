@@ -1,12 +1,12 @@
 import AboutSection from "@/sections/AboutSection";
 import FAQSection from "@/sections/FAQSection";
-import HeroSection from "@/sections/HeroSection";
+import LandingHeroSection from "@/sections/LandingHeroSection";
 import NewsSection from "@/sections/NewsSection";
 
 export default function Home() {
   return (
     <div>
-      <HeroSection />
+      <LandingHeroSection />
       <NewsSection />
       <AboutSection />
       <FAQSection />

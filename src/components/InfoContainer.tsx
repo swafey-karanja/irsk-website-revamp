@@ -1,13 +1,15 @@
+"use client";
+
 import React from "react";
 import { FileText } from "lucide-react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 // ✅ Define the props type
 interface InfoContainerProps {
   image: string;
   title: string;
   description: string;
-  onReadMore: () => void;
+  slug?: string;
 }
 
 // ✅ Apply the type to the props
@@ -15,8 +17,13 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
   image,
   title,
   description,
-  onReadMore,
+  slug,
 }) => {
+  const router = useRouter();
+
+  const handleReadMore = () => {
+    router.push(`/events/awards/${slug}`);
+  };
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Image Container */}
@@ -40,7 +47,7 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
 
         <div className="flex items-center justify-between mt-auto bottom-0">
           <button
-            onClick={onReadMore}
+            onClick={handleReadMore}
             className="flex items-center space-x-2 text-orange-400 hover:text-orange-500 transition-colors duration-200"
           >
             <FileText size={16} />
