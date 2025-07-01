@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { InfoContainer } from "@/components/InfoContainer";
 import Header from "@/components/Header";
-import GalleryDisplaySection from "../../../../components/GalleryDisplaySection";
 import VideosComponent from "@/components/VideosComponent";
 import DocumentsComponent from "@/components/DocumentsComponent";
 import PhotoHighlights from "@/components/PhotoHighlights";
+import GalleryDisplaySection from "@/components/GalleryDisplaySection";
 
 const EventPage = () => {
   const [showGallery, setShowGallery] = useState(false);

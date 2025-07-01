@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import React from "react";
 import VisionMissionValues from "./sections/VissionMissionValues";
 import MembersSection from "./sections/MembersSection";
+import MembershipForm from "./sections/MembershipSection";
 
 const AboutPage = () => {
   return (
@@ -12,6 +13,7 @@ const AboutPage = () => {
       />
       <VisionMissionValues />
       <MembersSection />
+      <MembershipForm />
     </div>
   );
 };

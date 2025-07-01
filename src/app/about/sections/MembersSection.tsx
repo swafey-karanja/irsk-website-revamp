@@ -37,7 +37,7 @@ const MembersSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 relative flex flex-col justify-center">
+    <section className="py-16 px-4 relative flex flex-col justify-center border-b-12 border-gray-600/40">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-pink-100 rounded-full opacity-20"></div>
