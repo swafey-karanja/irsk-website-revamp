@@ -53,7 +53,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b-8 sm:border-b-12 border-gray-600/40">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 border-b-8 sm:border-b-12 border-gray-600/40">
       <div className="max-w-4xl lg:max-w-6xl mx-auto">
         {/* Header */}
         <Header title="Useful Information" underlineColor="bg-orange-400" />

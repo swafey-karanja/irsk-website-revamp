@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <section className="relative min-h-[60vh] sm:min-h-[70vh] flex flex-col lg:flex-row border-b-8 sm:border-b-12 border-gray-600/40">
       {/* Left Section - About Content */}
-      <div className="w-full lg:w-1/2 bg-red-500 text-white flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 md:py-16 relative order-1 lg:order-1">
+      <div className="w-full lg:w-1/2 bg-red-500 text-white flex flex-col justify-center px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20 py-8 sm:py-12 relative order-1 lg:order-1">
         {/* Background texture overlay */}
         <div className="absolute inset-0 bg-orange-400"></div>
 

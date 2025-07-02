@@ -89,7 +89,7 @@ const LandingHeroSection = () => {
 
   return (
     <div
-      className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[87vh] w-full overflow-hidden"
+      className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] w-full overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

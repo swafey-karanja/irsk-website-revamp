@@ -41,7 +41,7 @@ const NewsSection = () => {
   const items = newsItems;
 
   return (
-    <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 relative border-b-8 sm:border-b-12 border-gray-600/40">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 relative border-b-8 sm:border-b-12 border-gray-600/40">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 sm:top-20 left-4 sm:left-10 w-16 sm:w-24 lg:w-32 h-16 sm:h-24 lg:h-32 bg-pink-100 rounded-full opacity-20 sm:opacity-30"></div>

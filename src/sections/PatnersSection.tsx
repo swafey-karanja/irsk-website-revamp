@@ -178,7 +178,7 @@ const PartnersSection: React.FC = () => {
   };
 
   return (
-    <section className="py-8 sm:py-12 md:py-16 px-4 relative border-b-8 sm:border-b-12 border-gray-600/40">
+    <section className="py-8 sm:py-12 px-4 relative border-b-8 sm:border-b-12 border-gray-600/40">
       {/* Background blur elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-blue-200/20 rounded-full blur-3xl"></div>
