@@ -41,11 +41,11 @@ const NewsSection = () => {
   const items = newsItems;
 
   return (
-    <section className="py-16 px-4 relative border-b-12 border-gray-600/40">
+    <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 relative border-b-8 sm:border-b-12 border-gray-600/40">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-pink-100 rounded-full opacity-30"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-blue-100 rounded-full opacity-30"></div>
+        <div className="absolute top-10 sm:top-20 left-4 sm:left-10 w-16 sm:w-24 lg:w-32 h-16 sm:h-24 lg:h-32 bg-pink-100 rounded-full opacity-20 sm:opacity-30"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-4 sm:right-10 w-12 sm:w-18 lg:w-24 h-12 sm:h-18 lg:h-24 bg-blue-100 rounded-full opacity-20 sm:opacity-30"></div>
       </div>
 
       <div className="max-w-7xl mx-auto">
@@ -56,7 +56,7 @@ const NewsSection = () => {
         />
 
         {/* News Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
           {items.map((item) => (
             <InfoContainer
               key={item.id}

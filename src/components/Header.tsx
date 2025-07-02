@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <div className={`mb-12 flex flex-col ${alignment[align]}`}>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-4">
+      <h2 className="text-2xl md:text-4xl font-bold text-gray-700 mb-4">
         {title}
       </h2>
       {subtitle && <p className="text-gray-500 max-w-xl mb-4">{subtitle}</p>}

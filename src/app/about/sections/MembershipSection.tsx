@@ -166,7 +166,10 @@ const MembershipForm: React.FC = () => {
   };
 
   return (
-    <section className="py-16 px-4 relative border-b-12 border-gray-600/40">
+    <section
+      className="py-16 px-4 relative border-b-12 border-gray-600/40"
+      id="membership-form"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-10 w-32 h-32 bg-orange-100 rounded-full opacity-20"></div>

@@ -7,26 +7,28 @@ import Header from "@/components/Header";
 const VisionMissionValues = () => {
   const coreValues = [
     {
-      icon: <Heart className="w-5 h-5" />,
-      title: "Compassion",
-      description:
-        "We act with empathy and understanding in all our interactions.",
-    },
-    {
-      icon: <Users className="w-5 h-5" />,
-      title: "Community",
-      description: "We believe in the power of collective action and support.",
-    },
-    {
-      icon: <Target className="w-5 h-5" />,
-      title: "Impact",
-      description: "We focus on creating meaningful and lasting change.",
-    },
-    {
       icon: <Shield className="w-5 h-5" />,
       title: "Integrity",
       description:
-        "We maintain the highest standards of honesty and transparency.",
+        "A vibrant professional body that is a trusted interlocutor on international relations and diplomacy issues in Kenya and beyond.",
+    },
+    {
+      icon: <Heart className="w-5 h-5" />,
+      title: "Neutrality",
+      description:
+        "We strive for a policy neutral, non-partisan approach to our operations.",
+    },
+    {
+      icon: <Users className="w-5 h-5" />,
+      title: "Inclusiveness",
+      description:
+        "We make sure to foster and promote broad and diverse membership.",
+    },
+    {
+      icon: <Target className="w-5 h-5" />,
+      title: "Professionalism",
+      description:
+        "We strive to promote professional excellence and competence.",
     },
   ];
 
@@ -68,14 +70,9 @@ const VisionMissionValues = () => {
             </h3>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                To create a world where every individual has access to
-                opportunities that enable them to reach their full potential and
-                contribute meaningfully to society.
-              </p>
-              <p>
-                We envision communities that are resilient, inclusive, and
-                empowered to address their challenges through collaborative
-                action and sustainable solutions.
+                A vibrant professional body that is a trusted interlocutor on
+                international relations and diplomacy issues in Kenya and
+                beyond.
               </p>
             </div>
           </div>
@@ -87,14 +84,11 @@ const VisionMissionValues = () => {
             </h3>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Our mission is to empower underserved communities through
-                education, healthcare, and economic development programs that
-                create lasting positive impact.
-              </p>
-              <p>
-                We work collaboratively with local partners to design and
-                implement solutions that address root causes of inequality and
-                promote sustainable development.
+                IRSK&apos;s mission is to serve as a policy-neutral platform
+                through which a community of international relations and
+                diplomacy practitioners, experts and scholars will be actively
+                involved in continuous learning, engagement and knowledge
+                sharing.
               </p>
             </div>
           </div>

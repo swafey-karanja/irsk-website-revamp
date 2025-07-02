@@ -36,6 +36,13 @@ const MembersSection = () => {
     },
   ];
 
+  const scrollToMembershipForm = () => {
+    const element = document.getElementById("membership-form");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="py-16 px-4 relative flex flex-col justify-center border-b-12 border-gray-600/40">
       {/* Background decorative elements */}
@@ -55,9 +62,7 @@ const MembersSection = () => {
 
           {/* Description text */}
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed text-md">
-            Vivamus pharetra ipsum mollis lorem pulvinar elementum. Aliquam
-            scelerisque pharetra ex in pharetra. Suspendisse nec tortor nec est
-            consequat malesuada at amet.
+            Meet our council members
           </p>
         </div>
 
@@ -74,11 +79,12 @@ const MembersSection = () => {
             >
               {/* Profile Image */}
               <div className="relative mb-6 mx-auto w-32 h-32 md:w-40 md:h-40">
-                <div className="w-full h-full rounded-full overflow-hidden border-4 border-white">
+                <div className="w-full h-full rounded-full overflow-hidden border-4 border-white absolute">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
@@ -99,11 +105,14 @@ const MembersSection = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button className="bg-white text-black px-8 py-3 rounded-lg font-medium text-md transition-all duration-300 ">
-            View a full list of council
+          <button className="bg-white text-black px-8 py-3 rounded-lg font-medium text-md transition-all duration-300">
+            View a full list of council members
           </button>
 
-          <button className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-3 rounded-lg font-medium text-md transition-all duration-300 ">
+          <button
+            onClick={scrollToMembershipForm} // Add this onClick handler
+            className="bg-orange-400 hover:bg-orange-500 text-white px-8 py-3 rounded-lg font-medium text-md transition-all duration-300"
+          >
             Become a member
           </button>
         </div>

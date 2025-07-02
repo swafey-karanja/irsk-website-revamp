@@ -27,7 +27,7 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Image Container */}
-      <div className="relative h-65 overflow-hidden">
+      <div className="relative h-48 sm:h-52 md:h-56 lg:h-64 overflow-hidden">
         <Image
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -38,11 +38,11 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
       </div>
 
       {/* Content Container */}
-      <div className="p-6">
-        <h3 className="text-xl font-medium text-gray-700 mb-3 leading-tight">
+      <div className="p-4 sm:p-5 lg:p-6">
+        <h3 className="text-lg sm:text-xl font-medium text-gray-700 mb-2 sm:mb-3 leading-tight">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+        <p className="text-gray-600 text-sm sm:text-base leading-relaxed mb-3 sm:mb-4">
           {description}
         </p>
 
@@ -52,7 +52,7 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
             className="flex items-center space-x-2 text-orange-400 hover:text-orange-500 transition-colors duration-200"
           >
             <FileText size={16} />
-            <span className="text-sm">Read more</span>
+            <span className="text-sm font-medium">Read more</span>
           </button>
         </div>
       </div>
