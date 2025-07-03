@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Shortcut Links */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white mb-6 relative">
-              Shortcut links
+              Useful links
               <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#0172c0]"></div>
             </h3>
             <ul className="space-y-4">
@@ -72,7 +72,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Quent per conubia
+                  Home
                 </a>
               </li>
               <li>
@@ -83,7 +83,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Neceptos himenaeos
+                  About IRSK
                 </a>
               </li>
               <li>
@@ -94,7 +94,18 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Mauris in erat
+                  Programs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
+                >
+                  <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
+                    +
+                  </span>
+                  Publications
                 </a>
               </li>
             </ul>
@@ -103,7 +114,7 @@ const Footer = () => {
           {/* Our Mission */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white mb-6 relative">
-              Our mission
+              Topics
               <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#0172c0]"></div>
             </h3>
             <ul className="space-y-4">
@@ -115,7 +126,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Aenean sollicitudin
+                  Diplomacy
                 </a>
               </li>
               <li>
@@ -127,7 +138,7 @@ const Footer = () => {
                     +
                   </span>
                   <span className="underline decoration-[#0172c0]">
-                    Duis sed odio sit amet
+                    Security
                   </span>
                 </a>
               </li>
@@ -139,7 +150,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Morbi accumsan
+                  Politics
                 </a>
               </li>
               <li>
@@ -150,7 +161,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Nam nec tellus
+                  Economics
                 </a>
               </li>
               <li>
@@ -161,7 +172,18 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Class aptent taciti
+                  Health
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
+                >
+                  <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
+                    +
+                  </span>
+                  Society
                 </a>
               </li>
             </ul>
@@ -170,7 +192,7 @@ const Footer = () => {
           {/* About Us */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white mb-6 relative">
-              About us
+              Regions
               <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#0172c0]"></div>
             </h3>
             <ul className="space-y-4">
@@ -182,7 +204,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Duis sed odio sit
+                  Africa
                 </a>
               </li>
               <li>
@@ -193,7 +215,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Morbi accumsan ipsum
+                  Americas
                 </a>
               </li>
               <li>
@@ -204,7 +226,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Nam nec tellus
+                  Europe
                 </a>
               </li>
               <li>
@@ -215,7 +237,18 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Class aptent taciti
+                  Arabia(Middle East)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
+                >
+                  <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
+                    +
+                  </span>
+                  Asia
                 </a>
               </li>
             </ul>
@@ -224,7 +257,7 @@ const Footer = () => {
           {/* Departments */}
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white mb-6 relative">
-              Departments
+              Contacts
               <div className="absolute -bottom-2 left-0 w-12 h-0.5 bg-[#0172c0]"></div>
             </h3>
             <ul className="space-y-4">
@@ -236,7 +269,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Aenean sollicitudin
+                  <strong>Call: </strong>&nbsp; +254 724 731 740
                 </a>
               </li>
               <li>
@@ -247,18 +280,7 @@ const Footer = () => {
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
-                  Duis sed odio sit
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
-                >
-                  <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
-                    +
-                  </span>
-                  Morbi accumsan
+                  <strong>Email:</strong>&nbsp;info@irskenya.or.ke
                 </a>
               </li>
             </ul>
@@ -271,19 +293,17 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-200 text-sm">
-            © 2025 betheme by{" "}
+            © 2025 – 2026 IRSK All Rights Reserved{" "}
             <a
               href="#"
               className="text-gray-200 hover:text-orange-500 transition-colors"
-            >
-              Muffin group
-            </a>{" "}
+            ></a>{" "}
             | All Rights Reserved | Powered by{" "}
             <a
               href="#"
               className="text-gray-200 hover:text-orange-500 transition-colors"
             >
-              WordPress
+              Media Force
             </a>
           </div>
         </div>

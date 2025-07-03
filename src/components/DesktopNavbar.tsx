@@ -124,7 +124,7 @@ export const DesktopNavbar = ({
                       key={item.name}
                       href={item.url}
                       data-item={item.name}
-                      className={`relative px-4 py-4 text-sm font-medium transition-colors ${
+                      className={`relative px-4 py-4 text-md font-medium transition-colors ${
                         activeLink === item.name
                           ? "text-blue-600"
                           : "hover:text-blue-600 text-md font-bold"
@@ -197,13 +197,15 @@ export const DesktopNavbar = ({
               )}
             </div>
 
-            {/* Search icon */}
-            <button
-              className="text-gray-400 hover:text-gray-600 transition-colors p-2"
-              aria-label="Search"
-            >
-              <Search size={20} />
-            </button>
+            <div className="flex items-center space-x-4">
+              <SocialLinks showSearch={false} />
+              <button
+                className="text-gray-400 hover:text-blue-600 transition-colors p-2"
+                aria-label="Search"
+              >
+                <Search size={18} />
+              </button>
+            </div>
           </div>
         </div>
       </nav>

@@ -1,6 +1,12 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif;
+@font-face {
+  font-family: 'Libertinus Math';
+  src: url('/fonts/LibertinusMath.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-libertinus {
+  font-family: 'Libertinus Math', serif;
 }

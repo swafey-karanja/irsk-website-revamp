@@ -1,6 +1,6 @@
 "use client";
 
-import { Facebook, Twitter, Instagram, Linkedin, Search } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Search, Youtube } from "lucide-react";
 
 export const SocialLinks = ({
   size = 18,
@@ -12,29 +12,29 @@ export const SocialLinks = ({
   return (
     <div className="flex items-center space-x-3">
       <a
-        href="#"
+        href="https://www.facebook.com/p/International-Relations-Society-of-Kenya-100069924211899/"
         className="text-gray-400 hover:text-blue-600 transition-colors"
         aria-label="Facebook"
       >
         <Facebook size={size} />
       </a>
       <a
-        href="#"
+        href="https://x.com/intrelationske?lang=en"
         className="text-gray-400 hover:text-blue-600 transition-colors"
         aria-label="Twitter"
       >
         <Twitter size={size} />
       </a>
       <a
-        href="#"
-        className="text-gray-400 hover:text-blue-600 transition-colors"
+        href="https://www.youtube.com/@IRSKOfficial"
+        className="text-gray-400 hover:text-red-600 transition-colors"
         aria-label="Instagram"
       >
-        <Instagram size={size} />
+        <Youtube size={size} />
       </a>
       <a
-        href="#"
-        className="text-gray-400 hover:text-blue-600 transition-colors"
+        href="https://www.linkedin.com/company/international-relations-society-of-kenya"
+        className="text-gray-400 hover:text-blue-600/50 transition-colors"
         aria-label="LinkedIn"
       >
         <Linkedin size={size} />

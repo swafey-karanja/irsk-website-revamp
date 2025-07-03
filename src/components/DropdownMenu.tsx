@@ -134,7 +134,7 @@ export function DropdownMenu({
       <button
         data-item={label}
         onClick={toggleDropdown}
-        className={`relative px-4 py-4 text-sm font-medium transition-colors flex items-center gap-1 ${
+        className={`relative px-4 py-4 text-md font-medium transition-colors flex items-center gap-1 ${
           isScrolled
             ? isActive
               ? "text-gray-900 font-medium py-3"

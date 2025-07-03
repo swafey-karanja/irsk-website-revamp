@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/sections/Navbar";
 import Footer from "@/components/Footer";
+import SocialMediaSidebar from "@/components/SocialMediaIcons";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -25,10 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{ backgroundColor: "#EFEEE9" }}
-        className={`${roboto.className} text-gray-900`}
+        style={{ backgroundColor: "#F7F6F5" }}
+        className={`font-libertinus text-gray-900`}
       >
         <Navbar />
+        <SocialMediaSidebar />
         <main className="min-h-screen">{children}</main>
         <Footer />
       </body>

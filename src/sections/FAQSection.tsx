@@ -1,6 +1,14 @@
 "use client";
 
-import { ChevronDown, Info, MapPin, Users } from "lucide-react";
+import {
+  ChevronDown,
+  Globe,
+  Info,
+  Mail,
+  MapPin,
+  UserPlus,
+  Users,
+} from "lucide-react";
 import React, { useState } from "react";
 
 // Mock Header component for demo
@@ -26,25 +34,46 @@ export default function FAQSection() {
 
   const faqData = [
     {
-      question: "Aenean blandit diam integer amet risus",
+      question: "What is the International Relations Society of Kenya (IRSK)?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      icon: <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
-      label: "About foundation",
-    },
-    {
-      question: "Cum sociis natoque posuere ut pulvinar nullam",
-      answer:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "The International Relations Society of Kenya is a professional, non-partisan platform that brings together scholars, students, diplomats, and practitioners interested in international affairs. IRSK fosters dialogue, research, and collaboration on global issues affecting Kenya and the region.",
       icon: <Info className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
-      label: "Our impact",
+      label: "About IRSK",
     },
     {
-      question: "Quisque lorem tortor fringilla sed",
+      question: "Who can join IRSK?",
       answer:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "Membership is open to students, academics, diplomats, researchers, civil society actors, and anyone passionate about international relations, diplomacy, or global governance.",
+      icon: <UserPlus className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
+      label: "Membership",
+    },
+    {
+      question: "What are the benefits of joining IRSK?",
+      answer:
+        "Members gain access to exclusive networking events, roundtables, mentorship opportunities, policy dialogues, and professional development resources in international relations and diplomacy.",
       icon: <Users className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
-      label: "Necessitous",
+      label: "Benefits",
+    },
+    {
+      question: "Does IRSK organize events or conferences?",
+      answer:
+        "Yes. IRSK regularly hosts public lectures, youth forums, policy panels, and its flagship Annual Diplomatic Conference, promoting dialogue on international affairs and Kenya’s global positioning.",
+      icon: <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
+      label: "Events",
+    },
+    {
+      question: "How can I volunteer or intern with IRSK?",
+      answer:
+        "Students and early-career professionals can apply for internship and volunteer opportunities in research, communications, event support, and more through IRSK’s official channels.",
+      icon: <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
+      label: "Get involved",
+    },
+    {
+      question: "How can I stay updated on IRSK activities?",
+      answer:
+        "Follow IRSK on social media, subscribe to the newsletter via the website, or check the event calendar regularly to stay informed about upcoming opportunities and programs.",
+      icon: <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-blue-500" />,
+      label: "Stay informed",
     },
   ];
 

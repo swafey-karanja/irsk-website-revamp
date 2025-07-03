@@ -15,7 +15,7 @@ const AboutSection = () => {
         <div className="relative z-10 max-w-2xl mx-auto lg:mx-0 w-full">
           {/* Main Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light mb-4 sm:mb-6 leading-tight">
-            About our foundation
+            About our Organisation
           </h2>
 
           {/* Decorative underline */}

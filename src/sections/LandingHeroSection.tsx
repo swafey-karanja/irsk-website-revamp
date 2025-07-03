@@ -89,7 +89,7 @@ const LandingHeroSection = () => {
 
   return (
     <div
-      className="relative h-[60vh] sm:h-[70vh] md:h-[80vh] w-full overflow-hidden"
+      className="relative h-[60vh] sm:h-[70vh] md:h-[85vh] w-full overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -144,7 +144,7 @@ const LandingHeroSection = () => {
 
           {/* Main text content */}
           <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl ml-8 sm:ml-12 md:ml-20 lg:ml-28 xl:ml-32 mb-12">
-            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 drop-shadow-lg">
+            <h1 className="text-white font-libertinus text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 drop-shadow-lg">
               A forum for the exchange of ideas, networking and programmatic
               initiatives.
             </h1>
