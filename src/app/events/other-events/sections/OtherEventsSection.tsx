@@ -95,6 +95,7 @@ const OtherEventsSection = () => {
               title={item.title}
               description={item.description}
               slug={item.slug}
+              type="other-events"
             />
           ))}
         </div>

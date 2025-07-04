@@ -268,11 +268,15 @@ const PartnersSection: React.FC = () => {
                       {/* Website Link */}
                       {partner.website && (
                         <div className="pt-2 sm:pt-3 md:pt-4 mt-auto">
-                          <a
-                            href={partner.website}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 sm:gap-2 text-orange-400 hover:text-orange-500 font-medium text-xs sm:text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:underline transform translate-y-2 group-hover:translate-y-0"
+                          <button
+                            onClick={() =>
+                              window.open(
+                                partner.website,
+                                "_blank",
+                                "noopener noreferrer"
+                              )
+                            }
+                            className="inline-flex items-center gap-1 sm:gap-2 cursor-pointer text-orange-400 hover:text-orange-500 font-medium text-xs sm:text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 hover:underline transform translate-y-2 group-hover:translate-y-0"
                             aria-label={`Visit ${partner.name} website`}
                           >
                             <span className="hidden sm:inline">
@@ -280,7 +284,7 @@ const PartnersSection: React.FC = () => {
                             </span>
                             <span className="sm:hidden">Visit</span>
                             <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
-                          </a>
+                          </button>
                         </div>
                       )}
                     </div>

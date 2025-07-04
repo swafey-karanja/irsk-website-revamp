@@ -6,6 +6,7 @@ import Image from "next/image";
 import { SocialLinks } from "./SocialLinks";
 import { DropdownItem } from "./DropdownMenu";
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface MobileNavbarProps {
   menuItems: { name: string; url: string }[];
@@ -126,24 +127,24 @@ export const MobileNavbar = ({
                       <div className="space-y-1 py-2">
                         {eventsItems.map((eventItem, idx) => (
                           <div key={idx}>
-                            <a
+                            <Link
                               href={eventItem.url}
                               className="block px-3 py-2 text-sm text-gray-600 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
                               onClick={toggleMobileMenu}
                             >
                               {eventItem.title}
-                            </a>
+                            </Link>
                             {eventItem.subItems && (
                               <div className="ml-4 space-y-1">
                                 {eventItem.subItems.map((subItem, subIdx) => (
-                                  <a
+                                  <Link
                                     key={subIdx}
                                     href={subItem.url}
                                     className="block px-3 py-1 text-xs text-gray-500 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
                                     onClick={toggleMobileMenu}
                                   >
                                     {subItem.title}
-                                  </a>
+                                  </Link>
                                 ))}
                               </div>
                             )}
@@ -153,7 +154,7 @@ export const MobileNavbar = ({
                     </div>
                   </>
                 ) : (
-                  <a
+                  <Link
                     href={item.url}
                     onClick={toggleMobileMenu}
                     className={`block w-full text-left px-3 py-2 rounded-md text-sm transition-colors ${
@@ -163,7 +164,7 @@ export const MobileNavbar = ({
                     }`}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}

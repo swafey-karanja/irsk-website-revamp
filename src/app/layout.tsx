@@ -1,14 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/sections/Navbar";
 import Footer from "@/components/Footer";
 import SocialMediaSidebar from "@/components/SocialMediaIcons";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800", "900"], // Add other weights if needed
-});
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "IRSK",
@@ -29,10 +24,12 @@ export default function RootLayout({
         style={{ backgroundColor: "#F7F6F5" }}
         className={`font-libertinus text-gray-900`}
       >
-        <Navbar />
-        <SocialMediaSidebar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <SocialMediaSidebar />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import { SocialLinks } from "./SocialLinks";
 import { DropdownMenu } from "./DropdownMenu";
 import { DropdownItem } from "./DropdownMenu";
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface DesktopNavbarProps {
   menuItems: { name: string; url: string }[];
@@ -120,7 +121,7 @@ export const DesktopNavbar = ({
                       onClick={() => {}}
                     />
                   ) : (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.url}
                       data-item={item.name}
@@ -131,7 +132,7 @@ export const DesktopNavbar = ({
                       }`}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
@@ -181,7 +182,7 @@ export const DesktopNavbar = ({
                     onClick={() => {}}
                   />
                 ) : (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.url}
                     data-item={item.name}
@@ -192,7 +193,7 @@ export const DesktopNavbar = ({
                     }`}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )
               )}
             </div>

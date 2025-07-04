@@ -4,12 +4,14 @@ import React from "react";
 import { FileText } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+
 // ✅ Define the props type
 interface InfoContainerProps {
   image: string;
   title: string;
   description: string;
   slug?: string;
+  type?: "conferences" | "forums" | "awards" | "webinars" | "other-events"; // <- Add this
 }
 
 // ✅ Apply the type to the props
@@ -18,16 +20,20 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
   title,
   description,
   slug,
+  type = "conferences", // default fallback
 }) => {
   const router = useRouter();
 
   const handleReadMore = () => {
-    router.push(`/events/awards/${slug}`);
+    if (slug && type) {
+      router.push(`/events/${type}/${slug}`);
+    }
   };
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Image Container */}
-      <div className="relative h-48 sm:h-52 md:h-56 lg:h-64 overflow-hidden">
+      <div className="relative h-56 sm:h-60 md:h-64 lg:h-72 overflow-hidden">
         <Image
           fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -52,7 +58,9 @@ export const InfoContainer: React.FC<InfoContainerProps> = ({
             className="flex items-center space-x-2 text-orange-400 hover:text-orange-500 transition-colors duration-200"
           >
             <FileText size={16} />
-            <span className="text-sm font-medium">Read more</span>
+            <span className="text-sm font-medium cursor-pointer">
+              Read more
+            </span>
           </button>
         </div>
       </div>

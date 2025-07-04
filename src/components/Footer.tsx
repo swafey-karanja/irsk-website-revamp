@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Footer = () => {
@@ -65,7 +66,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -73,10 +74,10 @@ const Footer = () => {
                     +
                   </span>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -84,10 +85,10 @@ const Footer = () => {
                     +
                   </span>
                   About IRSK
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -95,10 +96,10 @@ const Footer = () => {
                     +
                   </span>
                   Programs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -106,7 +107,7 @@ const Footer = () => {
                     +
                   </span>
                   Publications
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -119,7 +120,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -127,10 +128,10 @@ const Footer = () => {
                     +
                   </span>
                   Diplomacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -140,10 +141,10 @@ const Footer = () => {
                   <span className="underline decoration-[#0172c0]">
                     Security
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -151,10 +152,10 @@ const Footer = () => {
                     +
                   </span>
                   Politics
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -162,10 +163,10 @@ const Footer = () => {
                     +
                   </span>
                   Economics
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -173,10 +174,10 @@ const Footer = () => {
                     +
                   </span>
                   Health
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -184,7 +185,7 @@ const Footer = () => {
                     +
                   </span>
                   Society
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -197,7 +198,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -205,10 +206,10 @@ const Footer = () => {
                     +
                   </span>
                   Africa
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -216,10 +217,10 @@ const Footer = () => {
                     +
                   </span>
                   Americas
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -227,10 +228,10 @@ const Footer = () => {
                     +
                   </span>
                   Europe
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -238,10 +239,10 @@ const Footer = () => {
                     +
                   </span>
                   Arabia(Middle East)
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
                 >
@@ -249,7 +250,7 @@ const Footer = () => {
                     +
                   </span>
                   Asia
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -262,26 +263,20 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
-                  className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
-                >
+                <p className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group">
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
                   <strong>Call: </strong>&nbsp; +254 724 731 740
-                </a>
+                </p>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group"
-                >
+                <p className="text-gray-200 hover:text-orange-500 transition-colors duration-200 flex items-center group">
                   <span className="text-gray-200 mr-3 text-sm group-hover:text-orange-500">
                     +
                   </span>
                   <strong>Email:</strong>&nbsp;info@irskenya.or.ke
-                </a>
+                </p>
               </li>
             </ul>
           </div>
@@ -294,15 +289,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-200 text-sm">
             © 2025 – 2026 IRSK All Rights Reserved{" "}
-            <a
-              href="#"
-              className="text-gray-200 hover:text-orange-500 transition-colors"
-            ></a>{" "}
+            <p className="text-gray-200 hover:text-orange-500 transition-colors"></p>{" "}
             | All Rights Reserved | Powered by{" "}
-            <a
-              href="#"
-              className="text-gray-200 hover:text-orange-500 transition-colors"
-            >
+            <a className="text-gray-200 hover:text-orange-500 transition-colors">
               Media Force
             </a>
           </div>

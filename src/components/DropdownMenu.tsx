@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export interface DropdownItem {
   title: string;
@@ -98,24 +99,24 @@ export function DropdownMenu({
                       <ul className="space-y-2 py-1">
                         {item.subItems.map((sub, idx) => (
                           <li key={idx}>
-                            <a
+                            <Link
                               href={sub.url}
                               className="block text-white hover:text-gray-200 hover:pl-2 transition-all duration-200 focus:outline-none focus:text-gray-200 focus:pl-2 py-1 text-sm"
                             >
                               {sub.title}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
                     </div>
                   </>
                 ) : (
-                  <a
+                  <Link
                     href={item.url}
                     className="block text-white hover:text-gray-200 hover:pl-2 transition-all duration-200 focus:outline-none focus:text-gray-200 focus:pl-2 py-2 text-sm font-medium"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
@@ -167,13 +168,13 @@ export function DropdownMenu({
             >
               {item.subItems ? (
                 <>
-                  <a
+                  <Link
                     href={item.url}
                     className="flex justify-between items-center w-full px-4 py-3 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 font-medium"
                   >
                     {item.title}
                     <ChevronRight className="w-3 h-3 ml-2" />
-                  </a>
+                  </Link>
                   <div
                     className={`absolute left-full top-0 w-72 bg-white shadow-lg z-30 transition-opacity ${
                       activeSubmenu === item.title
@@ -184,24 +185,24 @@ export function DropdownMenu({
                     <div className="border-t-4 border-blue-600" />
                     <div className="py-1">
                       {item.subItems.map((sub, idx) => (
-                        <a
+                        <Link
                           key={idx}
                           href={sub.url}
                           className="block px-4 py-3 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors"
                         >
                           {sub.title}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
                 </>
               ) : (
-                <a
+                <Link
                   href={item.url}
                   className="block px-4 py-3 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors font-medium"
                 >
                   {item.title}
-                </a>
+                </Link>
               )}
             </div>
           ))}

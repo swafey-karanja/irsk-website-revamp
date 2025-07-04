@@ -5,13 +5,12 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { InfoContainer } from "@/components/InfoContainer";
 import Header from "@/components/Header";
-// import VideosComponent from "@/components/VideosComponent";
 import DocumentsComponent from "@/components/DocumentsComponent";
 import PhotoHighlights from "@/components/PhotoHighlights";
 import GalleryDisplaySection from "@/components/GalleryDisplaySection";
-import { useGetConferenceDetailsDataQuery } from "@/store/api/eventsDetailsApis";
+import { useGetWebinarDetailsDataQuery } from "@/store/api/eventsDetailsApis";
 
-const EventPage: React.FC = () => {
+const WebinarPage: React.FC = () => {
   const { slug } = useParams() as { slug: string };
   const [showGallery, setShowGallery] = useState(false);
 
@@ -22,17 +21,15 @@ const EventPage: React.FC = () => {
   const handleCloseGallery = () => setShowGallery(false);
 
   const {
-    data: conference,
+    data: webinar,
     isLoading,
     error,
-  } = useGetConferenceDetailsDataQuery(slug);
+  } = useGetWebinarDetailsDataQuery(slug);
 
   if (isLoading)
     return <p className="text-center mt-10 text-gray-500">Loading...</p>;
-  if (!conference)
-    return (
-      <p className="text-center mt-10 text-red-500">Conference not found.</p>
-    );
+  if (!webinar)
+    return <p className="text-center mt-10 text-red-500">Webinar not found.</p>;
   if (error)
     return (
       <p className="text-center mt-10 text-red-500">
@@ -40,17 +37,15 @@ const EventPage: React.FC = () => {
       </p>
     );
 
-  const title = conference.title.rendered;
-  const content = conference.content.rendered;
+  const title = webinar.title.rendered;
+  const content = webinar.content.rendered;
   const image =
-    conference.yoast_head_json?.og_image?.[0]?.url ||
-    conference._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+    webinar.yoast_head_json?.og_image?.[0]?.url ||
     "https://images.unsplash.com/photo-1484914440268-8d352fe4db95?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
-  const photos = conference.acf?.gallery || [];
-  // const videos = conference.acf?.videos || [];
-  const documents = conference.acf?.documents || [];
-  const otherEvents = conference.acf?.other_events || [];
+  const photos = webinar.acf?.gallery || [];
+  const documents = webinar.acf?.documents || [];
+  const otherEvents = webinar.acf?.other_events || [];
 
   return (
     <div className="min-h-screen border-b-12 border-gray-600/40">
@@ -87,8 +82,6 @@ const EventPage: React.FC = () => {
             />
           )}
 
-          {/* {videos.length > 0 && <VideosComponent videos={videos} />} */}
-
           {documents.length > 0 && <DocumentsComponent documents={documents} />}
 
           {otherEvents.length > 0 && (
@@ -104,7 +97,7 @@ const EventPage: React.FC = () => {
                     title={event.title}
                     description={event.description}
                     slug={event.slug}
-                    type="conferences"
+                    type="webinars"
                   />
                 ))}
               </div>
@@ -116,4 +109,4 @@ const EventPage: React.FC = () => {
   );
 };
 
-export default EventPage;
+export default WebinarPage;
